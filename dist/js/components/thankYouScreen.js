@@ -1,0 +1,1 @@
+export const createThankYouScreen=e=>{const n=document.querySelector(".form-wrapper");n.textContent="",n.innerHTML=`\n  <p>Спасибо ${e.name}! Мы вышлем результаты на Вашу почту - ${e.email}</p>\n  `};

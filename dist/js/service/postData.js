@@ -1,0 +1,1 @@
+import{createThankYouScreen}from"../components/thankYouScreen.js";const API="https://dummyjson.com/posts/add";export const postData=t=>{fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(t)}).then((t=>t.json())).then(createThankYouScreen(t))};
