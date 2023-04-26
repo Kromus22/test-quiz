@@ -1,0 +1,230 @@
+.form-wrapper {
+  background-color: #ffffff;
+  border-radius: 24px;
+  width: 576px;
+  max-height: 392px;
+  padding: 32px;
+}
+
+.form {
+  margin-bottom: 56px;
+  opacity: 1;
+  transition: opacity .5s ease-in-out
+}
+
+.form_inactive {
+  opacity: 0;
+}
+
+.form__fieldset {
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__top {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.form__legend {
+  font-weight: 500;
+}
+
+.step {
+  color: #9B9B9B;
+}
+
+.label-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 8px;
+  height: 185px;
+}
+
+.radio__input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+
+.radio__text {
+  position: relative;
+  display: block;
+  padding: 18px 16px;
+  background: #F5F5F5;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.radio__text::after {
+  position: absolute;
+  content: '';
+  background-image: url(../img/radio.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  right: 16px;
+  bottom: 18px
+}
+
+.radio__input:focus+.radio__text,
+.radio__input:checked+.radio__text {
+  background-color: transparent;
+  border: 1px solid #383838;
+}
+
+.radio__input:focus+.radio__text::after,
+.radio__input:checked+.radio__text::after {
+  background-image: url(../img/radio_active.svg);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 510px;
+  text-align: center;
+}
+
+.button-next {
+  position: relative;
+  align-self: flex-end;
+  padding: 12px 40px 12px 20px;
+  color: #ffffff;
+  background: #383838;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.button-next::after {
+  position: absolute;
+  content: '';
+  background-image: url(../img/arrow_right.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  right: 20px;
+  bottom: 14px;
+}
+
+.button-prev {
+  position: relative;
+  align-self: flex-start;
+  padding: 12px 20px 12px 40px;
+  color: #383838;
+  border-radius: 12px;
+  border: 1px solid #D8D8D8;
+  cursor: pointer;
+}
+
+.button-prev::after {
+  position: absolute;
+  content: '';
+  background-image: url(../img/arrow_left.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  left: 20px;
+  bottom: 14px;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 512px;
+  border: 1px solid #383838;
+  border-radius: 16px;
+  height: 56px;
+}
+
+.select-wrapper select {
+  width: 512px;
+  height: 56px;
+  padding: 0 0 0 16px;
+  margin-top: 5px;
+  background: transparent;
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.select-wrapper select::-ms-expand {
+  display: none;
+}
+
+.select-wrapper select:focus,
+.select-wrapper select:active {
+  outline: none;
+}
+
+.select-wrapper label {
+  position: absolute;
+  font-size: 12px;
+  line-height: 12px;
+  color: #9B9B9B;
+  left: 16px;
+  top: 10px;
+}
+
+.select-arrow {
+  position: absolute;
+  background-image: url(../img/arrow_selector.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  top: 16px;
+  right: 16px;
+}
+
+.label-wrapper_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 185px;
+}
+
+.input-text {
+  position: relative;
+  display: block;
+  padding: 18px 16px;
+  background: #F5F5F5;
+  border-radius: 16px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 8px;
+}
+
+.button-submit {
+  padding: 18px 40px 18px 20px;
+  color: #ffffff;
+  background: #383838;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.form__text {
+  font-size: 12px;
+  text-align: center;
+  color: #9B9B9B;
+}
+
+.form__link {
+  text-decoration: underline;
+  cursor: pointer;
+}
